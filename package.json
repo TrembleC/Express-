@@ -1,0 +1,10 @@
+{
+	"name":"expresstest",
+	"version":"1.0.0",
+	"description":"expresstest",
+	"main":"express.js",
+	"dependencies":{
+		"express": "^4.13.4",
+    		"express-session": "^1.14.0"
+	}
+}
