@@ -2,8 +2,10 @@
 var express = require("express");
 var app = express();
 
-app.get('/', function(req, res){
-  res.send("nnnnnnnnn");
+app.get("/", function(req, res){
+  res.render("index");
 });
 
-app.listen(7777);
+app.listen('777');
+
+console.log("loaded success!");
