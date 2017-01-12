@@ -1,12 +1,13 @@
-
 {
   "name": "expresstest",
   "version": "1.0.0",
   "description": "expresstest",
   "main": "express.js",
   "dependencies": {
+    "ejs-mate": "^2.3.0",
     "express": "^4.13.4",
     "express-session": "^1.14.0",
+    "path": "^0.12.7",
     "requirejs": "^2.3.2"
   }
 }
