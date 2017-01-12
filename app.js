@@ -10,7 +10,9 @@ var router = express.Router();
 // 设置默认的模版引擎
 app.set('view engine', 'ejs');
 app.engine('ejs', ejsMate);
+//布尔值设置
 app.enable('trust proxy');
+
 //默认路径地址
 app.use(express.static(path.join(__dirname, 'public')));
 
