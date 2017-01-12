@@ -8,16 +8,23 @@ var router = express.Router();
 // 设置视图目录
 // app.set('views','./Express-/views');
 // 设置默认的模版引擎
-app.set('view engine', 'ejs');
-app.engine('ejs', ejsMate);
-//布尔值设置
-app.enable('trust proxy');
+
+// app.engine('ejs', engine);
+// app.set('views',__dirname + '/views');
+// app.set('views engine', 'ejs');
+// //布尔值设置
+// app.enable('trust proxy');
 
 //默认路径地址
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+// 
+app.engine('ejs', ejsMate);
+
+app.set('views',__dirname + '/views');
+app.set('view engine', 'ejs'); // so you can render('index')
 
 app.get("/", function(req, res){
-  res.render("index");
+  res.render("index",{ what: 'best', who: 'me', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] });
 });
 
 //定义入口路由
@@ -26,7 +33,7 @@ app.get("/", function(req, res){
 // });
 
 
-app.use('/', router);
+// app.use('/', router);
 
 //端口监听
 app.listen('3002');
