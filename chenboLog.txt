@@ -1,6 +1,10 @@
 ﻿-----------------------chenboLog----------------------
-20170111
-1¡¢
-2¡¢Test_update
-
-Test_update2
+20170112
+1.tortoisegit和git的安装与使用：qqc式安装，默认选项快速安装。
+2.github的基本使用
+3.使用github进行团队合作：
+	①fork开发项目
+	②clone自己的fork到本地，进行修改
+	③提交修改到自己github账号fork的项目（用ssh key解决每次push都要输入账号密码的问题）
+	④创建pull restquest发送到项目所有者
+	⑤项目所有者同意修改，update项目
