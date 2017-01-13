@@ -24,7 +24,10 @@ app.set('views',__dirname + '/views');
 app.set('view engine', 'ejs'); // so you can render('index')
 
 app.get("/", function(req, res){
-  res.render("index",{ what: 'best', who: 'me', muppets: [ 'Kermit', 'Fozzie', 'Gonzo' ] });
+	res.render("index", {
+		title: 'test',
+		fun: 'testRoute'
+	});
 });
 
 //定义入口路由
