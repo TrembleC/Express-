@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "expresstest",
   "main": "express.js",
+  "script":"supervisor app.js",
   "dependencies": {
     "ejs-mate": "^2.3.0",
     "express": "^4.13.4",
