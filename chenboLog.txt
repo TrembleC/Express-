@@ -39,6 +39,7 @@
  		el: '#example'
 		})
 
+
 20170115
 1.nodeJS的组成部分：
 	①引入 required 模块：我们可以使用 require 指令来载入 Node.js 模块。
@@ -54,4 +55,5 @@
 
 		response.end('Hello World\n');
 	}).listen(9090);
+
 
