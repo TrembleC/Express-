@@ -38,3 +38,20 @@
 	new Vue({
  		el: '#example'
 		})
+
+20170115
+1.nodeJS的组成部分：
+	①引入 required 模块：我们可以使用 require 指令来载入 Node.js 模块。
+	②创建服务器：服务器可以监听客户端的请求，类似于 Apache 、Nginx 等 HTTP 服务器。
+	③接收请求与响应请求 服务器很容易创建，客户端可以使用浏览器或终端发送 HTTP 请求，服务器接收请求后返回响应数据。
+2.使用nodeJS创建一个端口为9090的服务器
+	例子：
+	var http = require('http');
+
+	http.createServer(function (request, response) {
+
+		response.writeHead(200, {'Content-Type': 'text/plain'});
+
+		response.end('Hello World\n');
+	}).listen(9090);
+
