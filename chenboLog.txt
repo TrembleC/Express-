@@ -39,6 +39,8 @@
  		el: '#example'
 		})
 
+<<<<<<< HEAD
+
 
 20170115
 1.nodeJS的组成部分：
@@ -54,6 +56,6 @@
 		response.writeHead(200, {'Content-Type': 'text/plain'});
 
 		response.end('Hello World\n');
-	}).listen(9090);
 
+	}).listen(9090);
 
