@@ -4,9 +4,6 @@ var path = require("path");
 
 var app = express();
 
-// //布尔值设置
-// app.enable('trust proxy');
-
 // 默认路径地址
 app.use(express.static(path.join(__dirname, 'public')));	//使用静态资源的默认路径，路径可以省略默认是'/'
 
@@ -24,13 +21,6 @@ app.get("/", function(req, res){
 	});
 });
 
-//定义入口路由
-// router.get('/', function(req, res) {
-//   res.send('index');
-// });
-
-
-// app.use('/', router);
 
 //端口监听
 app.listen('3002');
