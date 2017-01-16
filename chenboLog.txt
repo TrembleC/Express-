@@ -8,3 +8,33 @@
 	③提交修改到自己github账号fork的项目（用ssh key解决每次push都要输入账号密码的问题）
 	④创建pull restquest发送到项目所有者
 	⑤项目所有者同意修改，update项目
+
+20170113
+1.Vue.js的开发环境的搭建：
+	①vue.js全局安装：npm install --global vue-cli
+	②创建基于webpack模板的项目：vue init webpack my-project
+2.条件与循环
+	条件：v-if属性控制语句条件判断
+	循环：v-for可以绑定数据到数组来渲染一个列表
+3.时间监听
+	v-on指令绑定一个监听事件
+
+20170114
+1.vueJS计算属性：基于其依赖缓存，好比调用Date.now()，计算属性不会重新取值，而Method会响应式地取值。
+2.计算属性例子：
+	computed: {
+		reversedMessage: function () {
+      		return this.message.split('').reverse().join('')
+    }
+}
+3.组件：用Vue.component()对组件进行注册（在实例化之前要确保注册了组件）
+	例子：
+	// 注册
+	Vue.component('my-component', {
+  		template: '<div>A custom component!</div>'
+	})
+
+	// 创建根实例
+	new Vue({
+ 		el: '#example'
+		})
