@@ -7,7 +7,8 @@ Set up a simple node framework
 <h2>目录结构功能:</h2>
 <ul>
 	<li>public：存放静态文件(css,img,less,libs,script)</li>
-	<li>routes:文件</li>
+	<li>routes：文件路由设置存放的文件夹</li>
+	<li>views：存放静态页面</li>
 </ul>
 
 Update:
